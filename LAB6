@@ -1,0 +1,37 @@
+#include "pch.h"
+#include <math.h>
+#include<Windows.h>
+#include <iostream>
+using namespace std;
+
+
+
+int main()
+{
+	setlocale (LC_ALL, "Russian");
+	long double pi = acos((long double)-1);
+	int n, r, S;
+	cout << "Добро пожаловать! Давайте начнем работу, введите пожайлуста натуральное число 'n' и действительное число 'r'" << endl;
+	cout << "r=";
+	cin >> r;
+	cout << "n=";
+	cin >> n;
+	if (n <= 0)
+	{
+		cout << "Ваше число не являеться натуральным, введите пожайлуста еще раз" << endl;
+		cout << "n=";
+	}
+	else
+	{
+		cout << "У нас есть все данные, можем приступить к вычислениям" << endl;
+		S = ((pow(2 * r, n)) / n)*(pow(pi / 2, n / 2));
+		cout << "S=" << S << endl;
+		cout << "Программа выполнила свою цель, с Вами приятно работать, до следующего раза" << endl;
+		
+	}
+	
+
+	return 0;
+
+
+}
